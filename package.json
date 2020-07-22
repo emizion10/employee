@@ -11,11 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-joi-validation": "^4.0.4-beta.0",
     "express-validation": "^3.0.5",
     "http-status-codes": "^1.4.0",
     "joi": "^17.1.1",
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.19",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.3"
   }
 }
