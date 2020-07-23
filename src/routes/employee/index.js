@@ -16,8 +16,10 @@ router
     handleRequest(employeeController.create)
   );
 
-router.get("/testerror", (req, res, next) => {
-  next(new Error("No Data"), req, res);
-});
+router
+  .route("/:employeeId")
+  .get(handleRequest(employeeController.getSpecific))
+  .put(validator.body(createEmployee), handleRequest(employeeController.update))
+  .delete(handleRequest(employeeController.delete));
 
 module.exports = router;
